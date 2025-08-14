@@ -126,3 +126,9 @@ h3::after {
         border: 3px solid lightskyblue;
     }
 }
+
+@media (width > 600px) {
+    h3 {
+        font-size: 1.5rem;
+    }
+}
