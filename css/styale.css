@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #07102d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+header {
+    text-align: center;
+    color: goldenrod;
+    background: black;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    opacity: 0.6;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    color: #f5e059;
+
+}
+
+.inputs {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.inputIpv4 {
+    background: #07102d;
+    color: #f5e059;
+    width: 80%;
+    height: 50px;
+    border: 2p solid #f5e059;
+    font-size: 150%;
+    text-align: center;
+
+    animation-name: back;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.btn {
+
+    background: #f5e059;
+    color: #07102d;
+    width: 200px;
+    height: 50px;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-style: oblique;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    background: gold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    border-radius: 15px;
+    border: 3px solid red;
+    opacity: 0.5;
+    scale: 1.4;
+    z-index: -1;
+    left: 0;
+    animation-name: back;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes back {
+    0% {
+        border: 3px solid limegreen;
+    }
+
+    20% {
+        border: 3px solid lightgreen;
+    }
+
+    40% {
+        border: 3px solid lightseagreen;
+    }
+
+    60% {
+        border: 3px solid lightsalmon;
+    }
+
+    80% {
+        border: 3px solid lightseagreen;
+    }
+
+    100% {
+        border: 3px solid lightskyblue;
+    }
+}
